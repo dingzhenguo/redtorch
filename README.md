@@ -9,9 +9,17 @@
 
 ## 项目简介
 
-项目是基于Java语言开发的开源量化交易程序开发框架。
+项目是基于Java语言开发的开源量化交易程序开发框架。 
 
-项目仓库地址：[ https://github.com/sun0x00/redtorch](https://github.com/sun0x00/redtorch " https://github.com/sun0x00/redtorch")
+项目框架整合和设计，原生的Netty + Disruptor
+需要在启动Master节点之后访问对应的地址127.0.0.1:9099的管理后台设置对应的节点。
+图片
+复制节点的编号和对应的ID设置到Slave的配置文件中，application.properties。
+rt.rpc.client.node-id=10002
+rt.rpc.client.token=a19c0069-7e76-4902-b603-4dd931bbe4fa
+中。
+启动RtNodeSlaveApplication即可。
+
 
 ## 开发语言
 Java
